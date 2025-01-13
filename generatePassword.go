@@ -8,6 +8,7 @@ import (
 	"os"
 )
 
+// go run generatePassword.go -length=16 -output=my_password.txt запуск программы через флаги можно сохранять в текстовый файл пароль от любого документа Например "пароль_от_одноклассников"
 const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_+=<>?"
 
 // generatePassword создает случайный пароль заданной длины
@@ -65,5 +66,3 @@ func main() {
 
 	fmt.Println("Password saved to file:", *output)
 }
-
-//go run generatePassword.go -length=16 -output=my_password.txt запуск программы через флаги можно сохранять в текстовый файл пароль от любого документа Например "пароль_от_одноклассников"
